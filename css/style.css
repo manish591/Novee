@@ -1,0 +1,61 @@
+.main {
+    margin-block-start: 7rem;
+}
+
+.main__wrapper {
+    inline-size: min(90%, 1400px);
+    margin-inline: auto;
+}
+
+.products {
+    flex-direction: column;
+}
+
+.products__name {
+    background-color: var(--surface4);
+    width: 100%;
+    height: 150px;
+}
+
+.brand-idea {
+    inline-size: 100%;
+    block-size: 350px;
+    background-color: var(--surface4);
+    margin-top: 5rem;
+}
+
+.product-feature {
+    margin-top: 5rem;
+}
+
+.product-one {
+    background-color: var(--brand);
+    inline-size: 100%;
+    block-size: 350px;
+}
+
+.product-two {
+    background-color: var(--surface4);
+    inline-size: 100%;
+    block-size: 200px;
+    margin-top: 2rem;
+}
+
+.product-three {
+    background-color: var(--surface4);
+    inline-size: 100%;
+    block-size: 200px;
+    margin-top: 2rem;
+}
+
+.brand__list {
+    margin-top: 3rem;
+    block-size: 100px;
+    background-color: var(--surface4);
+}
+
+@media (min-width: 600px) {
+    .products {
+        flex-direction: row;
+    }
+}

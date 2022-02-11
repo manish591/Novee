@@ -1,0 +1,28 @@
+.sidebar {
+    display: grid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    block-size: 100vh;
+    grid-template-columns: 70% 1fr;
+    visibility: hidden;
+    transition: transform 500ms ease-in-out;
+    transform: translateX(-100%);
+    z-index: 13;
+}
+
+.sidebar__content {
+    background-color: var(--surface4);
+}
+
+:target {
+    visibility: visible;
+    transform: translateX(0%);
+}
+
+
+@media (min-width: 930px) {
+    .sidebar {
+        display: none;
+    }
+}

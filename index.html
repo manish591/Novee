@@ -5,20 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novee Store</title>
+    <link rel="stylesheet" href="https://uinova.netlify.app/css/main.css">
+    <link rel="stylesheet" href="/css/system.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <aside>
-
+<body class="surface-one">
+    <aside class="sidebar" id="sidenav-open">
+        <section class="sidebar__content">THis is sidebar</section>
+        <a href="#" id="sidenav-close" class="sidebar__close" title="Close Menu"></a>
     </aside> 
-    <header>
-        <nav></nav>
-        <section></section>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__wrapper flex">
+                <ul class="navbar__list flex">
+                    <li class="navbar__items navbar__items--menu">
+                        <a href="#sidenav-open" class="navbar__items--icons"><span class="material-icons">menu</span></a>
+                    </li>
+                    <li class="navbar__items navbar__items--logo">novee</li>
+                </ul>
+                <ul class="navbar__list flex navbar--hide navbar__list--links">
+                    <li class="navbar__items">Home</li>
+                    <li class="navbar__items">Laptops</li>
+                    <li class="navbar__items">Tablets</li>
+                    <li class="navbar__items">Phones</li>
+                </ul>
+                <ul class="navbar__list flex navbar__list--search">
+                    <li class="navbar__items navbar--hide navbar__items--search-bar">
+                        <div class="search-bar">
+                            <span class="material-icons search-icon">search</span>
+                            <input type="text" class="input-field" placeholder="search laptops, phones and tablets">
+                        </div>
+                    </li>
+                    <li class="navbar__items navbar__items--icons navbar__items--search">
+                        <span class="material-icons">search</span>
+                    </li>
+                </ul>
+                <ul class="navbar__list flex">
+                    <li class="navbar__items navbar--hide navbar__items--icons navbar__items--profile">
+                        <span class="material-icons">person</span>
+                    </li>
+                    <li class="navbar__items navbar--hide navbar__items--icons navbar__items--wishlist">
+                        <span class="material-icons">favorite_border</span>
+                    </li>
+                    <li class="navbar__items navbar__items--icons">
+                        <span class="material-icons">shopping_bag</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero">
+            <div class="hero__wrapper">
+                <div class="hero__slider">
+                    <p class="move-left">Prev</p>
+                    <section class="carousel">
+                        <article class="carousel__item carousel__item--one selected" data-serial="1">
+                            <h1>I'm Box One</h1>
+                        </article>
+                        <article class="carousel__item carousel__item--two prev" data-serial="2">
+                            <h1>I'm Box Two</h1>
+                        </article>
+                        <article class="carousel__item carousel__item--three prev" data-serial="3">
+                            <h1>I'm Box Three</h1>
+                        </article>
+                        <article class="carousel__item carousel__item--four prev" data-serial="4">
+                            <h1>I'm Box Four</h1>
+                        </article>
+                        <article class="carousel__item carousel__item--five prev" data-serial="5">
+                            <h1>I'm Box Five</h1>
+                        </article>
+                    </section>
+                    <p class="move-right">Next</p>
+                </div>
+            </div>
+        </section>
     </header>
-    <main>
-
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="products flex">
+                <section class="products__name">Product One</section>
+                <section class="products__name">Product Two</section>
+                <section class="products__name">Product Three</section>
+            </div>
+            <div class="product-feature">
+                <div class="product-one">
+                    This is first product
+                </div>
+                <div class="product-two">
+                    This is laptop product
+                </div>
+                <div class="product-three">
+                    This is laptop product
+                </div>
+            </div>
+            <div class="brand__list">
+                this is brand list
+            </div>
+            <div class="brand-idea">
+                This is brand idea section
+            </div>
+        </div>
     </main>
-    <footer>
-        
+    <footer class="footer">
+        <div class="footer__wrapper flow-space-2">
+            <p class="footer__brand">noveee</p>
+            <ul class="footer__list flex">
+                <li class="footer__items">Home</li>
+                <li class="footer__items">Laptops</li>
+                <li class="footer__items">Tablets</li>
+                <li class="footer__items">Phones</li>
+            </ul>
+            <p class="footer__description">Novee provides you with the best electronics material. We'll provide you laptops, tablets, phones of higher quality. Login to get started.</p>
+            <p class="footer__copyright">Copyright 2022. All Rights Reserved</p>
+            <ul class="footer__socials flex">
+                <li class="footer__items">Github</li>
+                <li class="footer__items">Twitter</li>
+                <li class="footer__items">LinkedIn</li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
