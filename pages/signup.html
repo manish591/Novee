@@ -16,21 +16,21 @@
           </div>
   
           <form class="signup__form">
-            <div class="name-container">
+            <section class="name-container">
               <label for="name">Name</label>
-              <input type="text" id='name' class='signup__name' placeholder='Manish Devrani'/>
-            </div>
-            <div class="email-container">
+              <input type="text" id='name' name="name" class='signup__name' autocomplete="name">
+            </section>
+            <section class="email-container">
               <label for="email">Email</label>
-              <input type="text" id='email' class='signup__email' />
-            </div>
-            <div class="password-container">
+              <input type="email" id='email' name="email" class='signup__email' autocomplete="email" required>
+            </section>
+            <section class="password-container">
               <label for="password">Password</label>
-              <input type="password" id='password' class='signup__password' />
-            </div>
-            <div class="submit-btn">
+              <input type="password" id='password' name="new-password" class='signup__password' required>
+            </section>
+            <section class="submit-btn">
               <button type='submit' class="signup__submit">Sign Up</button>
-            </div>
+            </section>
           </form> 
   
           <div class="signup__footer">

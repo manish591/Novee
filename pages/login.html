@@ -15,24 +15,24 @@
             <p class="login__greeting">Welcome! Back</p>
           </div>
           <form class="login__form">
-            <div class="email-container">
+            <section class="email-container">
               <label for="email">Email</label>
-              <input type="text" id='email' class='login__email' />
-            </div>
-            <div class="password-container">
+              <input type="email" id='email' name="email" class='login__email' autocomplete="email" required>
+            </section>
+            <section class="password-container">
               <label for="password">Password</label>
-              <input type="password" id='password' class='login__password' />
-            </div>
-            <div class="additional-data">
-              <div class="rememberMe-container">
-                <input type="checkbox" id='rememberMe' />
+              <input type="password" id='password' name="current-password" class='login__password' required>
+            </section>
+            <section class="additional-data">
+              <section class="rememberMe-container">
+                <input type="checkbox" id='rememberMe' class="login__remember-me">
                 <label for="rememberMe">Remember Me</label>
-              </div>
+              </section>
               <button class="login__forgotPassword">Forgot password?</button>
-            </div>
-            <div class="submit-btn">
+            </section>
+            <section class="submit-btn">
               <button type='submit' class="login__submit">Log In</button>
-            </div>
+            </section>
           </form>
           <div class="login__footer">
             <p>Don't Have an account? </p>
