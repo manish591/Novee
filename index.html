@@ -15,10 +15,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="surface-one">
-    <aside class="sidebar" id="sidenav-open">
-        <section class="sidebar__content">THis is sidebar</section>
-        <a href="#" id="sidenav-close" class="sidebar__close" title="Close Menu"></a>
-    </aside> 
+    <aside class="sidebar grid" id="sidenav-open">
+        <section class="sidebar__content">
+          <div class="sidebar__top">
+            <ul class="sidebar__top-list flex">
+                <li class="sidebar__title">
+                    <h3>novee</h3>
+                </li>
+                <li class="sidebar__list-item sidebar--clear">
+                    <span class="material-icons clear-icon">clear</span>
+                </li>
+            </ul>
+          </div>
+          <div class="sidebar__bottom">
+            <ul class="sidebar__list flex">
+              <li class="sidebar__list-item">
+                  <a href="#">Home</a></li>
+              <li class="sidebar__list-item">
+                <a href="#">Laptops</a>
+              </li>
+              <li class="sidebar__list-item">
+                <a href="#">Tablets</a>
+              </li>
+              <li class="sidebar__list-item">
+                <a href="#">Phones</a></li>
+            </ul>
+          </div>
+        </section>
+        <a
+          href="#"
+          id="sidenav-close"
+          class="sidebar__close"
+          title="Close Menu"
+        ></a>
+      </aside>
     <header class="header">
         <nav class="navbar">
             <div class="navbar__wrapper flex">
@@ -86,27 +116,89 @@
     </header>
     <main class="main">
         <div class="main__wrapper">
+            <div class="brand-list flex">
+                <section class="brand-list__name">
+                    One
+                </section>
+                <section class="brand-list__name">
+                    Two
+                </section>
+                <section class="brand-list__name">
+                    Three
+                </section>
+                <section class="brand-list__name">
+                    Four
+                </section>
+                <section class="brand-list__name">
+                    Five
+                </section>
+            </div>
             <div class="products flex">
-                <section class="products__name">Product One</section>
-                <section class="products__name">Product Two</section>
-                <section class="products__name">Product Three</section>
+                <section class="products__name flex">
+                    <div class="product__wrapper flex">
+                        <!-- <div class="product__picture">
+                            <img src="/assets/pngwing.com.png" alt="" class="responsive-img">
+                        </div> -->
+                        <h3 class="product__category">Laptops</h3>
+                        <a href="#" class="product__link flex">
+                            <p>Shop</p>
+                            <span class="material-icons">navigate_next</span>
+                        </a>
+                    </div>
+                </section>
+                <section class="products__name flex">
+                    <div class="product__wrapper flex">
+                        <h3 class="product__category">Tablets</h3>
+                        <a href="#" class="product__link flex">
+                            <p>Shop</p>
+                            <span class="material-icons">navigate_next</span>
+                        </a>
+                    </div>
+                </section>
+                <section class="products__name flex">
+                    <div class="product__wrapper flex">
+                        <h3 class="product__category">Phones</h3>
+                        <a href="#" class="product__link flex">
+                            <p>Shop</p>
+                            <span class="material-icons">navigate_next</span>
+                        </a>
+                    </div>
+                </section>
             </div>
             <div class="product-feature">
-                <div class="product-one">
-                    This is first product
+                <div class="product-one grid">
+                    <div class="product-feature__picture">
+                        <img src="/assets/pngwing.com.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="product-feature--info">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolor velit accusantium quos obcaecati porro deserunt laboriosam tempora quasi quae! Accusantium pariatur possimus enim suscipit velit quia repellendus rerum impedit veniam repellat debitis iusto eveniet natus facere eaque, nisi maxime assumenda ex magnam delectus? Culpa laborum expedita eum iusto nobis?</p>
+                    </div>
                 </div>
-                <div class="product-two">
-                    This is laptop product
+                <div class="product-two grid">
+                    <div class="product-feature__picture">
+                        <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" class="responsive-img">
+                    </div>
+                    <div class="product-feature--info">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolor velit accusantium quos obcaecati porro deserunt laboriosam tempora quasi quae! Accusantium pariatur possimus enim suscipit velit quia repellendus rerum impedit veniam repellat debitis iusto eveniet natus facere eaque, nisi maxime assumenda ex magnam delectus? Culpa laborum expedita eum iusto nobis?</p>
+                    </div>
                 </div>
-                <div class="product-three">
-                    This is laptop product
+                <div class="product-three grid">
+                    <div class="product-feature__picture">
+                        <img src="https://images.unsplash.com/photo-1623126908029-58cb08a2b272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRhYmxldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" class="responsive-img">
+                    </div>
+                    <div class="product-feature--info">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolor velit accusantium quos obcaecati porro deserunt laboriosam tempora quasi quae! Accusantium pariatur possimus enim suscipit velit quia repellendus rerum impedit veniam repellat debitis iusto eveniet natus facere eaque, nisi maxime assumenda ex magnam delectus? Culpa laborum expedita eum iusto nobis?</p>
+                    </div>
                 </div>
             </div>
-            <div class="brand__list">
-                this is brand list
-            </div>
-            <div class="brand-idea">
-                This is brand idea section
+            <div class="brand-idea flex">
+                <div class="brand-idea__message">
+                    <h2 class="brand-idea__title">Providing You The Best Tech Gadgets Ever.</h2>
+                    <p class="brand-idea__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit molestias perspiciatis inventore? Quidem repellat odio suscipit, culpa harum, placeat laudantium in, quo rerum nesciunt aperiam. Voluptatum, dolorum qui enim amet sit ipsa ab et accusantium autem sint nihil, facere mollitia repudiandae ex neque, blanditiis laboriosam ut tenetur eius inventore.</p>
+                </div>
+                <div class="brand-idea__picture">
+                    <img src="https://images.unsplash.com/photo-1518644730709-0835105d9daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbiUyMHdpdGglMjBsYXB0b3B8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="" class="responsive-img">
+                </div>
             </div>
         </div>
     </main>

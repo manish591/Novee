@@ -4,7 +4,7 @@
 
 .navbar {
     background-color: var(--surface3);
-    padding-block: 1.2rem;
+    padding-block: .8rem;
     border-block-end: 1px solid var(--surface4);
     box-shadow: 0 0 6px rgba(26, 25, 25, 0.068);
     position: fixed;
