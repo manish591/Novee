@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/sidebar.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="/js/home.js"></script>
 </head>
 <body class="surface-one">
     <aside class="sidebar grid" id="sidenav-open">
@@ -23,7 +24,7 @@
                     <h3>novee</h3>
                 </li>
                 <li class="sidebar__list-item sidebar--clear">
-                    <span class="material-icons clear-icon">clear</span>
+                    <a href="#"><span class="material-icons clear-icon">clear</span></a>
                 </li>
             </ul>
           </div>
@@ -32,14 +33,22 @@
               <li class="sidebar__list-item">
                   <a href="#">Home</a></li>
               <li class="sidebar__list-item">
-                <a href="#">Laptops</a>
-              </li>
-              <li class="sidebar__list-item">
                 <a href="#">Tablets</a>
               </li>
               <li class="sidebar__list-item">
-                <a href="#">Phones</a></li>
+                <a href="#">Phones</a>
+              </li>
+              <li class="sidebar__list-item">
+                    <a href="#">Laptops</a>
+              </li>
             </ul>
+            <ul class="sidebar__list flex">
+                <li class="sidebar__list-item">
+                    <a href="#">Account</a></li>
+                <li class="sidebar__list-item">
+                  <a href="#">Logout</a>
+                </li>
+              </ul>
           </div>
         </section>
         <a
@@ -76,8 +85,33 @@
                     </li>
                 </ul>
                 <ul class="navbar__list flex">
-                    <li class="navbar__items navbar--hide navbar__items--icons navbar__items--profile">
+                    <li class="navbar__items navbar--hide navbar__items--icons navbar__items--profile profile">
                         <span class="material-icons">person</span>
+                        <div class="profile__dropdown">
+                            <ul class="profile__list grid">
+                                <li class="profile__greeting">
+                                    <h3>Hello! Manish</h3>
+                                </li>
+                                <li class="profile__greeting">
+                                    <button class="btn btn--contained-primary profile__btn">Login/Signup</button>
+                                </li>
+                            </ul>
+                            <ul class="profile__list grid">
+                                <li class="profile__item">Orders</li>
+                                <li class="profile__item">Wishlist</li>
+                                <li class="profile__item">Gift cards</li>
+                                <li class="profile__item">Contact Us</li>
+                            </ul>
+                            <ul class="profile__list grid">
+                                <li class="profile__item">Coupons</li>
+                                <li class="profile__item">Saved Cards</li>
+                                <li class="profile__item">Saved Addresses</li>
+                            </ul>
+                            <ul class="profile__list grid">
+                                <li class="profile__item">Edit Profile</li>
+                                <li class="profile__item">LogOut</li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="navbar__items navbar--hide navbar__items--icons navbar__items--wishlist">
                         <span class="material-icons">favorite_border</span>
