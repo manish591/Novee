@@ -95,13 +95,15 @@
     inline-size: 100%;
     margin-inline: auto;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel {
-    inline-size: 100%;
+    inline-size: 500%;
     block-size: 400px;
-    position: relative;
-    overflow: hidden;
+    display: flex;
+    transform: translateX(0%);
+    transition: transform 300ms ease-in-out;
 }
 
 .carousel__item {
@@ -110,23 +112,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 400ms ease;
     background-color: var(--surface4);
-}
-
-.selected {
-    transform: translateX(0%);
-}
-
-.next {
-    transform: translateX(100%);
-}
-
-.prev {
-    transform: translateX(-100%);
 }
 
 .move-left, 
@@ -135,7 +121,6 @@
     z-index: 10;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.945);
     padding: .3rem .7rem;
     margin-inline: .3rem;
     border-radius: 6px;
