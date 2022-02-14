@@ -1,8 +1,8 @@
 .sidebar {
     gap: var(--spacing-1);
     position: fixed;
-    top: 0;
-    width: 100%;
+    inset-block-start: 0;
+    inline-size: 100%;
     block-size: 100vh;
     grid-template-columns: 70% 1fr;
     visibility: hidden;
@@ -41,7 +41,7 @@
 }
 
 .sidebar--clear {
-   margin-top: 6px;
+   margin-block-start: 6px;
 }
 
 .sidebar__top-list {
@@ -63,12 +63,12 @@
 .sidebar__title {
     font-size: var(--fs-700);
     color: var(--surface4);
-    margin-bottom: 7px;
+    margin-block-end: 7px;
 }
 
 .sidebar__bottom {
-    width: 100%;
-    height: calc(100vh - 100px);
+    inline-size: 100%;
+    block-size: calc(100vh - 100px);
     overflow: hidden;
     overflow-y: auto;
     padding-block-end: var(--spacing-12);

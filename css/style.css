@@ -10,12 +10,12 @@
 .products {
     flex-direction: column;
     gap: 3rem;
-    margin-top: 5rem;
+    margin-block-start: 5rem;
 }
 
 .products__name {
     background-color: var(--surface4);
-    width: 100%;
+    inline-size: 100%;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -36,7 +36,7 @@
 }
 
 .product__picture {
-    width: 50%;
+    inline-size: 50%;
     align-self: center;
     transform: translateY(-20px);
     position: relative;
@@ -45,10 +45,10 @@
 .product__picture::before {
     content: "";
     position: absolute;
-    top: 40%;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset-block-start: 40%;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
     background-color: rgba(27, 27, 27, 0.158);
     transform: perspective(2rem) rotateX(60deg) scale(0.6, 0.35);
     border-radius: 50%;
@@ -63,7 +63,7 @@
 
 .brand-idea {
     inline-size: 100%;
-    margin-top: 8rem;
+    margin-block-start: 8rem;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
@@ -75,7 +75,7 @@
 }
 
 .brand-idea__desc {
-    margin-top: 1rem;
+    margin-block-start: 1rem;
 }
 
 .brand-idea__message {
@@ -85,13 +85,13 @@
 }
 
 .brand-list {
-    margin-top: 2rem;
+    margin-block-start: 2rem;
     justify-content: center;
 }
 
 .brand-list__name {
     border: 1px solid hotpink;
-    width: 100px;
+    inline-size: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,13 +100,14 @@
 }
 
 .product-feature {
-    margin-top: 5rem;
+    margin-block-start: 5rem;
 }
 
 .product-one {
     background-color: var(--clr-primary);
     inline-size: 100%;
-    padding: 4rem 1rem;
+    padding-inline: 1rem;
+    padding-block: 4rem;
     gap: 1.5rem;
     color: var(--light-clr);
     grid-template-columns: 1fr;
@@ -115,13 +116,13 @@
 .product-two {
     background-color: var(--surface4);
     inline-size: 100%;
-    margin-top: 2rem;
+    margin-block-start: 2rem;
     grid-template-columns: 1fr;
 }
 
 .product-three {
     inline-size: 100%;
-    margin-top: 2rem;
+    margin-block-start: 2rem;
     grid-template-columns: 1fr;
 }
 
@@ -142,12 +143,12 @@
 }
 
 .product-feature__picture img {
-    height: 300px;
-    width: 100%;
+    block-size: 300px;
+    inline-size: 100%;
 }
 
 .product-one img {
-    width: 100%;
+    inline-size: 100%;
     object-fit: contain;
     transform: scale(.8);
 }
@@ -166,10 +167,10 @@
     }
 }
 
-@media (min-width: 100px) {
+@media (min-width: 1000px) {
     .brand-idea {
         inline-size: 100%;
-        margin-top: 5rem;
+        margin-block-start: 5rem;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -200,6 +201,7 @@
     }
 
     .product-one {
-        padding: 6rem 1rem;
+        padding-block: 6rem;
+        padding-inline: 1rem;
     }
 }

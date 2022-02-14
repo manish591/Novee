@@ -4,10 +4,11 @@
 }
 
 .footer {
-    margin-top: 9rem;
+    margin-block-start: 9rem;
     background-color: var(--clr-secondary);
     color: var(--light-clr);
-    padding: 1.5rem 0;
+    padding-inline: 0;
+    padding-block: 1.5rem;
     text-align: center;
 }
 
