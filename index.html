@@ -1,259 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Novee Store</title>
-    <link rel="stylesheet" href="https://uinova.netlify.app/css/main.css">
-    <link rel="stylesheet" href="/css/system.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/sidebar.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://uinova.netlify.app/css/main.css" />
+    <link rel="stylesheet" href="/css/system.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="/js/home.js"></script>
     <script defer src="/js/slider.js"></script>
-</head>
-<body class="surface-one">
+  </head>
+  <body class="surface-two">
     <aside class="sidebar grid" id="sidenav-open">
-        <section class="sidebar__content">
-          <div class="sidebar__top">
-            <ul class="sidebar__top-list flex">
-                <li class="sidebar__title">
-                    <h3>novee</h3>
-                </li>
-                <li class="sidebar__list-item sidebar--clear">
-                    <a href="#"><span class="material-icons clear-icon">clear</span></a>
-                </li>
-            </ul>
-          </div>
-          <div class="sidebar__bottom">
-            <ul class="sidebar__list flex">
-              <li class="sidebar__list-item">
-                  <a href="#">Home</a></li>
-              <li class="sidebar__list-item">
-                <a href="#">Tablets</a>
-              </li>
-              <li class="sidebar__list-item">
-                <a href="#">Phones</a>
-              </li>
-              <li class="sidebar__list-item">
-                    <a href="#">Laptops</a>
-              </li>
-            </ul>
-            <ul class="sidebar__list flex">
-                <li class="sidebar__list-item">
-                    <a href="#">Account</a></li>
-                <li class="sidebar__list-item">
-                  <a href="#">Logout</a>
-                </li>
-              </ul>
-          </div>
-        </section>
-        <a
-          href="#"
-          id="sidenav-close"
-          class="sidebar__close"
-          title="Close Menu"
-        ></a>
-      </aside>
+      <section class="sidebar__content">
+        <div class="sidebar__top">
+          <ul class="sidebar__top-list flex">
+            <li class="sidebar__title">
+              <h3>novee</h3>
+            </li>
+            <li class="sidebar__list-item sidebar--clear">
+              <a href="#"
+                ><span class="material-icons clear-icon">clear</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__bottom">
+          <ul class="sidebar__list flex">
+            <li class="sidebar__list-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="#">Tablets</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="#">Phones</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="#">Laptops</a>
+            </li>
+          </ul>
+          <ul class="sidebar__list flex">
+            <li class="sidebar__list-item">
+              <a href="#">Account</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <a
+        href="#"
+        id="sidenav-close"
+        class="sidebar__close"
+        title="Close Menu"
+      ></a>
+    </aside>
     <header class="header">
-        <nav class="navbar">
-            <div class="navbar__wrapper flex">
-                <ul class="navbar__list flex">
-                    <li class="navbar__items navbar__items--menu">
-                        <a href="#sidenav-open" class="navbar__items--icons"><span class="material-icons">menu</span></a>
-                    </li>
-                    <li class="navbar__items navbar__items--logo">novee</li>
+      <nav class="navbar">
+        <div class="navbar__wrapper flex">
+          <ul class="navbar__list flex">
+            <li class="navbar__items navbar__items--menu">
+              <a href="#sidenav-open" class="navbar__items--icons"
+                ><span class="material-icons">menu</span></a
+              >
+            </li>
+            <li class="navbar__items navbar__items--logo">novee</li>
+          </ul>
+          <ul class="navbar__list flex navbar--hide navbar__list--links">
+            <li class="navbar__items">Home</li>
+            <li class="navbar__items">Laptops</li>
+            <li class="navbar__items">Tablets</li>
+            <li class="navbar__items">Phones</li>
+          </ul>
+          <ul class="navbar__list flex navbar__list--search">
+            <li class="navbar__items navbar--hide navbar__items--search-bar">
+              <div class="search-bar">
+                <span class="material-icons search-icon">search</span>
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="search laptops, phones and tablets"
+                />
+              </div>
+            </li>
+            <li
+              class="navbar__items navbar__items--icons navbar__items--search"
+            >
+              <span class="material-icons">search</span>
+            </li>
+          </ul>
+          <ul class="navbar__list flex">
+            <li
+              class="navbar__items navbar--hide navbar__items--icons navbar__items--profile profile"
+            >
+              <span class="material-icons">person</span>
+              <div class="profile__dropdown">
+                <ul class="profile__list grid">
+                  <li class="profile__greeting">
+                    <h3>Hello! Manish</h3>
+                  </li>
+                  <li class="profile__greeting">
+                    <button class="btn btn--contained-primary profile__btn">
+                      Login/Signup
+                    </button>
+                  </li>
                 </ul>
-                <ul class="navbar__list flex navbar--hide navbar__list--links">
-                    <li class="navbar__items">Home</li>
-                    <li class="navbar__items">Laptops</li>
-                    <li class="navbar__items">Tablets</li>
-                    <li class="navbar__items">Phones</li>
+                <ul class="profile__list grid">
+                  <li class="profile__item">Orders</li>
+                  <li class="profile__item">Wishlist</li>
+                  <li class="profile__item">Gift cards</li>
+                  <li class="profile__item">Contact Us</li>
                 </ul>
-                <ul class="navbar__list flex navbar__list--search">
-                    <li class="navbar__items navbar--hide navbar__items--search-bar">
-                        <div class="search-bar">
-                            <span class="material-icons search-icon">search</span>
-                            <input type="text" class="input-field" placeholder="search laptops, phones and tablets">
-                        </div>
-                    </li>
-                    <li class="navbar__items navbar__items--icons navbar__items--search">
-                        <span class="material-icons">search</span>
-                    </li>
+                <ul class="profile__list grid">
+                  <li class="profile__item">Coupons</li>
+                  <li class="profile__item">Saved Cards</li>
+                  <li class="profile__item">Saved Addresses</li>
                 </ul>
-                <ul class="navbar__list flex">
-                    <li class="navbar__items navbar--hide navbar__items--icons navbar__items--profile profile">
-                        <span class="material-icons">person</span>
-                        <div class="profile__dropdown">
-                            <ul class="profile__list grid">
-                                <li class="profile__greeting">
-                                    <h3>Hello! Manish</h3>
-                                </li>
-                                <li class="profile__greeting">
-                                    <button class="btn btn--contained-primary profile__btn">Login/Signup</button>
-                                </li>
-                            </ul>
-                            <ul class="profile__list grid">
-                                <li class="profile__item">Orders</li>
-                                <li class="profile__item">Wishlist</li>
-                                <li class="profile__item">Gift cards</li>
-                                <li class="profile__item">Contact Us</li>
-                            </ul>
-                            <ul class="profile__list grid">
-                                <li class="profile__item">Coupons</li>
-                                <li class="profile__item">Saved Cards</li>
-                                <li class="profile__item">Saved Addresses</li>
-                            </ul>
-                            <ul class="profile__list grid">
-                                <li class="profile__item">Edit Profile</li>
-                                <li class="profile__item">LogOut</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="navbar__items navbar--hide navbar__items--icons navbar__items--wishlist">
-                        <span class="material-icons">favorite_border</span>
-                    </li>
-                    <li class="navbar__items navbar__items--icons">
-                        <span class="material-icons">shopping_bag</span>
-                    </li>
+                <ul class="profile__list grid">
+                  <li class="profile__item">Edit Profile</li>
+                  <li class="profile__item">LogOut</li>
                 </ul>
-            </div>
-        </nav>
-        <section class="hero">
-            <div class="hero__wrapper">
-                <div class="hero__slider">
-                    <span class="material-icons move-left">chevron_left</span>
-                    <section class="carousel">
-                        <article class="carousel__item carousel__item--one" data-serial="1">
-                            <h1>I'm Box One</h1>
-                        </article>
-                        <article class="carousel__item carousel__item--two" data-serial="2">
-                            <h1>I'm Box Two</h1>
-                        </article>
-                        <article class="carousel__item carousel__item--three" data-serial="3">
-                            <h1>I'm Box Three</h1>
-                        </article>
-                        <article class="carousel__item carousel__item--four" data-serial="4">
-                            <h1>I'm Box Four</h1>
-                        </article>
-                        <article class="carousel__item carousel__item--five" data-serial="5">
-                            <h1>I'm Box Five</h1>
-                        </article>
-                    </section>
-                    <span class="material-icons move-right">chevron_right</span>
+              </div>
+            </li>
+            <li
+              class="navbar__items navbar--hide navbar__items--icons navbar__items--wishlist"
+            >
+              <span class="material-icons">favorite_border</span>
+            </li>
+            <li class="navbar__items navbar__items--icons">
+              <span class="material-icons">shopping_bag</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="hero">
+        <div class="hero__wrapper">
+          <div class="hero__slider">
+            <span class="material-icons move-left">chevron_left</span>
+            <section class="carousel">
+              <article
+                class="carousel__item carousel-slide flex"
+                data-serial="1"
+              >
+                <div class="carousel-slide__info grid">
+                  <small class="carousel-slide__label">New Product</small>
+                  <h2 class="carousel-slide__name">ASUS Vivobook 14 Laptop</h2>
+                  <p class="carousel-slide__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deleniti, esse debitis! Quidem cumque eum illum?
+                  </p>
+                  <button
+                    class="carousel-slide__btn btn btn--contained-primary"
+                  >
+                    See Product
+                  </button>
                 </div>
-            </div>
-        </section>
+              </article>
+              <article
+                class="carousel__item carousel-slide flex"
+                data-serial="2"
+              >
+                <div class="carousel-slide__info grid">
+                  <small class="carousel-slide__label">New Product</small>
+                  <h2 class="carousel-slide__name">Lenevo Ipad 3 11th Gen</h2>
+                  <p class="carousel-slide__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deleniti, esse debitis! Quidem cumque eum illum?
+                  </p>
+                  <button
+                    class="carousel-slide__btn btn btn--contained-primary"
+                  >
+                    See Product
+                  </button>
+                </div>
+              </article>
+              <article
+                class="carousel__item carousel-slide flex"
+                data-serial="3"
+              >
+                <div class="carousel-slide__info grid">
+                  <small class="carousel-slide__label">New Product</small>
+                  <h2 class="carousel-slide__name">Dell 15 Laptop</h2>
+                  <p class="carousel-slide__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deleniti, esse debitis! Quidem cumque eum illum?
+                  </p>
+                  <button
+                    class="carousel-slide__btn btn btn--contained-primary"
+                  >
+                    See Product
+                  </button>
+                </div>
+              </article>
+              <article
+                class="carousel__item carousel-slide flex"
+                data-serial="4"
+              >
+                <div class="carousel-slide__info grid">
+                  <small class="carousel-slide__label">New Product</small>
+                  <h2 class="carousel-slide__name">ASUS ZenBook 14 Laptop</h2>
+                  <p class="carousel-slide__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deleniti, esse debitis! Quidem cumque eum illum?
+                  </p>
+                  <button
+                    class="carousel-slide__btn btn btn--contained-primary"
+                  >
+                    See Product
+                  </button>
+                </div>
+              </article>
+              <article
+                class="carousel__item carousel-slide flex"
+                data-serial="5"
+              >
+                <div class="carousel-slide__info grid">
+                  <small class="carousel-slide__label">New Product</small>
+                  <h2 class="carousel-slide__name">XX99 MarkII Headphones</h2>
+                  <p class="carousel-slide__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deleniti, esse debitis! Quidem cumque eum illum?
+                  </p>
+                  <button
+                    class="carousel-slide__btn btn btn--contained-primary"
+                  >
+                    See Product
+                  </button>
+                </div>
+              </article>
+            </section>
+            <span class="material-icons move-right">chevron_right</span>
+          </div>
+        </div>
+      </section>
     </header>
     <main class="main">
-        <div class="main__wrapper">
-            <div class="brand-list flex">
-                <section class="brand-list__name">
-                    One
-                </section>
-                <section class="brand-list__name">
-                    Two
-                </section>
-                <section class="brand-list__name">
-                    Three
-                </section>
-                <section class="brand-list__name">
-                    Four
-                </section>
-                <section class="brand-list__name">
-                    Five
-                </section>
-            </div>
-            <div class="products flex">
-                <section class="products__name flex">
-                    <div class="product__wrapper flex">
-                        <!-- <div class="product__picture">
+      <div class="main__wrapper">
+        <div class="brand-list flex">
+          <section class="brand-list__name">One</section>
+          <section class="brand-list__name">Two</section>
+          <section class="brand-list__name">Three</section>
+          <section class="brand-list__name">Four</section>
+          <section class="brand-list__name">Five</section>
+        </div>
+        <div class="products flex">
+          <section class="products__name flex">
+            <div class="product__wrapper flex">
+              <!-- <div class="product__picture">
                             <img src="/assets/pngwing.com.png" alt="" class="responsive-img">
                         </div> -->
-                        <h3 class="product__category">Laptops</h3>
-                        <a href="#" class="product__link flex">
-                            <p>Shop</p>
-                            <span class="material-icons">navigate_next</span>
-                        </a>
-                    </div>
-                </section>
-                <section class="products__name flex">
-                    <div class="product__wrapper flex">
-                        <h3 class="product__category">Tablets</h3>
-                        <a href="#" class="product__link flex">
-                            <p>Shop</p>
-                            <span class="material-icons">navigate_next</span>
-                        </a>
-                    </div>
-                </section>
-                <section class="products__name flex">
-                    <div class="product__wrapper flex">
-                        <h3 class="product__category">Phones</h3>
-                        <a href="#" class="product__link flex">
-                            <p>Shop</p>
-                            <span class="material-icons">navigate_next</span>
-                        </a>
-                    </div>
-                </section>
+              <h3 class="product__category">Laptops</h3>
+              <a href="#" class="product__link flex">
+                <p>Shop</p>
+                <span class="material-icons">navigate_next</span>
+              </a>
             </div>
-            <div class="product-feature">
-                <div class="product-one grid">
-                    <div class="product-feature__picture">
-                        <img src="/assets/pngwing.com.png" alt="" class="responsive-img">
-                    </div>
-                    <div class="product-feature--info">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolor velit accusantium quos obcaecati porro deserunt laboriosam tempora quasi quae! Accusantium pariatur possimus enim suscipit velit quia repellendus rerum impedit veniam repellat debitis iusto eveniet natus facere eaque, nisi maxime assumenda ex magnam delectus? Culpa laborum expedita eum iusto nobis?</p>
-                    </div>
-                </div>
-                <div class="product-two grid">
-                    <div class="product-feature__picture">
-                        <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="" class="responsive-img">
-                    </div>
-                    <div class="product-feature--info">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolor velit accusantium quos obcaecati porro deserunt laboriosam tempora quasi quae! Accusantium pariatur possimus enim suscipit velit quia repellendus rerum impedit veniam repellat debitis iusto eveniet natus facere eaque, nisi maxime assumenda ex magnam delectus? Culpa laborum expedita eum iusto nobis?</p>
-                    </div>
-                </div>
-                <div class="product-three grid">
-                    <div class="product-feature__picture">
-                        <img src="https://images.unsplash.com/photo-1623126908029-58cb08a2b272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRhYmxldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="" class="responsive-img">
-                    </div>
-                    <div class="product-feature--info">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, dolor velit accusantium quos obcaecati porro deserunt laboriosam tempora quasi quae! Accusantium pariatur possimus enim suscipit velit quia repellendus rerum impedit veniam repellat debitis iusto eveniet natus facere eaque, nisi maxime assumenda ex magnam delectus? Culpa laborum expedita eum iusto nobis?</p>
-                    </div>
-                </div>
+          </section>
+          <section class="products__name flex">
+            <div class="product__wrapper flex">
+              <h3 class="product__category">Tablets</h3>
+              <a href="#" class="product__link flex">
+                <p>Shop</p>
+                <span class="material-icons">navigate_next</span>
+              </a>
             </div>
-            <div class="brand-idea flex">
-                <div class="brand-idea__message">
-                    <h2 class="brand-idea__title">Providing You The Best Tech Gadgets Ever.</h2>
-                    <p class="brand-idea__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae suscipit molestias perspiciatis inventore? Quidem repellat odio suscipit, culpa harum, placeat laudantium in, quo rerum nesciunt aperiam. Voluptatum, dolorum qui enim amet sit ipsa ab et accusantium autem sint nihil, facere mollitia repudiandae ex neque, blanditiis laboriosam ut tenetur eius inventore.</p>
-                </div>
-                <div class="brand-idea__picture">
-                    <img src="https://images.unsplash.com/photo-1518644730709-0835105d9daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbiUyMHdpdGglMjBsYXB0b3B8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="" class="responsive-img">
-                </div>
+          </section>
+          <section class="products__name flex">
+            <div class="product__wrapper flex">
+              <h3 class="product__category">Phones</h3>
+              <a href="#" class="product__link flex">
+                <p>Shop</p>
+                <span class="material-icons">navigate_next</span>
+              </a>
             </div>
+          </section>
         </div>
+        <div class="product-feature">
+          <div class="product-one grid">
+            <div class="product-feature__picture">
+              <img
+                src="/assets/pngwing.com.png"
+                alt=""
+                class="responsive-img"
+              />
+            </div>
+            <div class="product-feature--info">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
+                dolor velit accusantium quos obcaecati porro deserunt laboriosam
+                tempora quasi quae! Accusantium pariatur possimus enim suscipit
+                velit quia repellendus rerum impedit veniam repellat debitis
+                iusto eveniet natus facere eaque, nisi maxime assumenda ex
+                magnam delectus? Culpa laborum expedita eum iusto nobis?
+              </p>
+            </div>
+          </div>
+          <div class="product-two grid">
+            <div class="product-feature__picture">
+              <img
+                src="https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW9iaWxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                alt=""
+                class="responsive-img"
+              />
+            </div>
+            <div class="product-feature--info">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
+                dolor velit accusantium quos obcaecati porro deserunt laboriosam
+                tempora quasi quae! Accusantium pariatur possimus enim suscipit
+                velit quia repellendus rerum impedit veniam repellat debitis
+                iusto eveniet natus facere eaque, nisi maxime assumenda ex
+                magnam delectus? Culpa laborum expedita eum iusto nobis?
+              </p>
+            </div>
+          </div>
+          <div class="product-three grid">
+            <div class="product-feature__picture">
+              <img
+                src="https://images.unsplash.com/photo-1623126908029-58cb08a2b272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRhYmxldHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                alt=""
+                class="responsive-img"
+              />
+            </div>
+            <div class="product-feature--info">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
+                dolor velit accusantium quos obcaecati porro deserunt laboriosam
+                tempora quasi quae! Accusantium pariatur possimus enim suscipit
+                velit quia repellendus rerum impedit veniam repellat debitis
+                iusto eveniet natus facere eaque, nisi maxime assumenda ex
+                magnam delectus? Culpa laborum expedita eum iusto nobis?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="brand-idea flex">
+          <div class="brand-idea__message">
+            <h2 class="brand-idea__title">
+              Providing You The Best Tech Gadgets Ever.
+            </h2>
+            <p class="brand-idea__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae suscipit molestias perspiciatis inventore? Quidem
+              repellat odio suscipit, culpa harum, placeat laudantium in, quo
+              rerum nesciunt aperiam. Voluptatum, dolorum qui enim amet sit ipsa
+              ab et accusantium autem sint nihil, facere mollitia repudiandae ex
+              neque, blanditiis laboriosam ut tenetur eius inventore.
+            </p>
+          </div>
+          <div class="brand-idea__picture">
+            <img
+              src="https://images.unsplash.com/photo-1518644730709-0835105d9daa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlcnNvbiUyMHdpdGglMjBsYXB0b3B8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+              alt=""
+              class="responsive-img"
+            />
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-        <div class="footer__wrapper flow-space-2">
-            <p class="footer__brand">noveee</p>
-            <ul class="footer__list flex">
-                <li class="footer__items">Home</li>
-                <li class="footer__items">Laptops</li>
-                <li class="footer__items">Tablets</li>
-                <li class="footer__items">Phones</li>
-            </ul>
-            <p class="footer__description">Novee provides you with the best electronics material. We'll provide you laptops, tablets, phones of higher quality. Login to get started.</p>
-            <p class="footer__copyright">Copyright 2022. All Rights Reserved</p>
-            <ul class="footer__socials flex">
-                <li class="footer__items">Github</li>
-                <li class="footer__items">Twitter</li>
-                <li class="footer__items">LinkedIn</li>
-            </ul>
-        </div>
+      <div class="footer__wrapper flow-space-2">
+        <p class="footer__brand">noveee</p>
+        <ul class="footer__list flex">
+          <li class="footer__items">Home</li>
+          <li class="footer__items">Laptops</li>
+          <li class="footer__items">Tablets</li>
+          <li class="footer__items">Phones</li>
+        </ul>
+        <p class="footer__description">
+          Novee provides you with the best electronics material. We'll provide
+          you laptops, tablets, phones of higher quality. Login to get started.
+        </p>
+        <p class="footer__copyright">Copyright 2022. All Rights Reserved</p>
+        <ul class="footer__socials flex">
+          <li class="footer__items">Github</li>
+          <li class="footer__items">Twitter</li>
+          <li class="footer__items">LinkedIn</li>
+        </ul>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
