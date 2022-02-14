@@ -62,7 +62,8 @@
 
 .sidebar__title {
     font-size: var(--fs-700);
-    color: var(--brand);
+    color: var(--surface4);
+    margin-bottom: 7px;
 }
 
 .sidebar__bottom {
@@ -98,7 +99,7 @@
     color: var(--text2);
 }
 
-@media (min-width: 930px) {
+@media (min-width: 1000px) {
     .sidebar {
         display: none;
     }
