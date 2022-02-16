@@ -8,14 +8,32 @@
     <link rel="stylesheet" href="/css/product-listing.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <title>Product-listing</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <script defer src="/js/script.js"></script>
 </head>
-<body class="surface-one">
+<body class="surface-three">
     <main class="listing">
         <div class="listing__wrapper grid">
-            <header class="listing__header">
-                This is listing header
+            <header class="listing__header listing-header grid">
+                <div class="listing-header__right flex">
+                  <h3>Filters</h3>
+                  <button>Clear All</button>
+                </div>
+                <div class="listing-header__left">
+
+                </div>
             </header>
-            <aside class="listing__filters">
+            <aside class="listing__filters filter-list"> 
+              <div class="filter-list__close flex">
+                <button class="filter-list__close-btn">Close</button>
+              </div>
+              <div class="filter-list__controls flex">
+                <button class="filter-list__cancel">Clear Filters</button>
+                <button class="filter-list__ok">Show Results</button>
+              </div>
                 <form class="listing__form">
                     <select multiple="true" class="filters__select" title="Filter results by category">
                         <optgroup label="Availabilty">
@@ -24,7 +42,7 @@
                         </optgroup>
                         <optgroup label="Prices">
                             <option value="Rs. 200 to Rs. 1000">Rs. 200 to Rs. 1000</option>
-                            <option value="Rs. 1000 to Rs. 5000">Rs. 1000 to Rs5000000</opt10on>
+                            <option value="Rs. 1000 to Rs. 5000">Rs. 1000 to Rs 5000</opt10on>
                             <option value="Rs. 5000 to Rs. 10000">Rs. 5000 to Rs. 10000</option>
                             <option value="Rs. 10000 to Rs. 50000">Rs. 10000 to Rs. 50000</option>
                         </optgroup>
@@ -43,100 +61,101 @@
                             <label for="availability-one" class="filters__label">Include out of stock</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="availability" id="availability-two">
+                            <input type="checkbox" name="availability" id="availability-two" class="filters__checkbox">
                             <label for="availability-two" class="filters__label">Fast delivery only</label>
                         </div>
                     </fieldset>
                     <fieldset class="listing__filter-item filters">
                         <legend class="filters__title">Prices</legend>
                         <div class="filters__group">
-                            <input type="checkbox" id="prices-one" name="prices">
+                            <input type="checkbox" id="prices-one" name="prices" class="filters__checkbox">
                             <label for="prices-one" class="filters__label">Rs. 200 to Rs. 1000</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="prices" id="prices-two">
-                            <label for="prices-two" class="filters__label">Rs. 1000 to Rs. 5000</label>
+                            <input type="checkbox" name="prices" id="prices-two" class="filters__checkbox">
+                            <label for="prices-two" class="filters__label">Rs. 1000 to Rs. 2000</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="prices" id="prices-three">
-                            <label for="prices-three" class="filters__label">Rs. 5000 to Rs. 10000</label>
+                            <input type="checkbox" name="prices" id="prices-three" class="filters__checkbox">
+                            <label for="prices-three" class="filters__label">Rs. 2000 to Rs. 3000</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="prices" id="prices-four">
-                            <label for="prices-four" class="filters__label">Rs. 10000 to Rs. 50000</label>
+                            <input type="checkbox" name="prices" id="prices-four" class="filters__checkbox">
+                            <label for="prices-four" class="filters__label">Rs. 3000 to Rs. 5000</label>
                         </div>
                     </fieldset>
                     <fieldset class="listing__filter-item filters">
                         <legend class="filters__title">Brands</legend>
                         <div class="filters__group">
-                            <input type="checkbox" id="brand-one" name="brand">
+                            <input type="checkbox" id="brand-one" name="brand" class="filters__checkbox">
                             <label for="brand-one" class="filters__label">Asus</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-two">
+                            <input type="checkbox" name="brand" id="brand-two" class="filters__checkbox">
                             <label for="brand-two" class="filters__label">Nova</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-three">
+                            <input type="checkbox" name="brand" id="brand-three" class="filters__checkbox">
                             <label for="brand-three" class="filters__label">Apple</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-four">
+                            <input type="checkbox" name="brand" id="brand-four" class="filters__checkbox">
                             <label for="brand-four" class="filters__label">Vivo</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-five">
+                            <input type="checkbox" name="brand" id="brand-five" class="filters__checkbox">
                             <label for="brand-five" class="filters__label">Dell</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-six">
+                            <input type="checkbox" name="brand" id="brand-six" class="filters__checkbox">
                             <label for="brand-six" class="filters__label">Oppo</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" id="brand-seven" name="brand">
+                            <input type="checkbox" id="brand-seven" name="brand" class="filters__checkbox">
                             <label for="brand-seven" class="filters__label">Acer</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-eight">
+                            <input type="checkbox" name="brand" id="brand-eight" class="filters__checkbox">
                             <label for="brand-eight" class="filters__label">Sony</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-nine">
+                            <input type="checkbox" name="brand" id="brand-nine" class="filters__checkbox">
                             <label for="brand-nine" class="filters__label">HP</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-ten">
+                            <input type="checkbox" name="brand" id="brand-ten" class="filters__checkbox">
                             <label for="brand-ten" class="filters__label">Redmi</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-eleven">
+                            <input type="checkbox" name="brand" id="brand-eleven" class="filters__checkbox">
                             <label for="brand-eleven" class="filters__label">One Plus</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="brand" id="brand-twelve">
+                            <input type="checkbox" name="brand" id="brand-twelve" class="filters__checkbox">
                             <label for="brand-twelve" class="filters__label">Samsung</label>
                         </div>
                     </fieldset>
                     <fieldset class="listing__filter-item filters">
                         <legend class="filters__title">Prices</legend>
                         <div class="filters__group">
-                            <input type="checkbox" id="price-one" name="price">
+                            <input type="checkbox" id="price-one" name="price" class="filters__checkbox">
                             <label for="price-one">Asus</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="price" id="price-two">
+                            <input type="checkbox" name="price" id="price-two" class="filters__checkbox">
                             <label for="price-two">Nova</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="price" id="price-three">
+                            <input type="checkbox" name="price" id="price-three" class="filters__checkbox">
                             <label for="price-three">Apple</label>
                         </div>
                         <div class="filters__group">
-                            <input type="checkbox" name="price" id="price-four">
+                            <input type="checkbox" name="price" id="price-four" class="filters__checkbox">
                             <label for="price-four">Vivo</label>
                         </div>
                     </fieldset>
                 </form>
+              
             </aside>
             <div class="listing__products layout grid-auto-fill">
                 <section class="card">
@@ -145,6 +164,9 @@
                       <button class="card__remove-wishlist">
                         <span class="material-icons">favorite_border</span>
                       </button>
+                      <div class="card__add-to-cart">
+                        <button class="card__add-cart-btn">Add To Cart</button>
+                      </div>
                     </div>
                     <div class="card__info">
                       <div class="card__title">
@@ -164,6 +186,9 @@
                       <button class="card__remove-wishlist">
                         <span class="material-icons">favorite_border</span>
                       </button>
+                      <div class="card__add-to-cart">
+                        <button class="card__add-cart-btn">Add To Cart</button>
+                      </div>
                     </div>
                     <div class="card__info">
                       <div class="card__title">
@@ -183,6 +208,9 @@
                       <button class="card__remove-wishlist">
                         <span class="material-icons">favorite_border</span>
                       </button>
+                      <div class="card__add-to-cart">
+                        <button class="card__add-cart-btn">Add To Cart</button>
+                      </div>
                     </div>
                     <div class="card__info">
                       <div class="card__title">
@@ -202,6 +230,9 @@
                       <button class="card__remove-wishlist">
                         <span class="material-icons">favorite_border</span>
                       </button>
+                      <div class="card__add-to-cart">
+                        <button class="card__add-cart-btn">Add To Cart</button>
+                      </div>
                     </div>
                     <div class="card__info">
                       <div class="card__title">
@@ -221,6 +252,9 @@
                       <button class="card__remove-wishlist">
                         <span class="material-icons">favorite_border</span>
                       </button>
+                      <div class="card__add-to-cart">
+                        <button class="card__add-cart-btn">Add To Cart</button>
+                      </div>
                     </div>
                     <div class="card__info">
                       <div class="card__title">
@@ -240,6 +274,9 @@
                       <button class="card__remove-wishlist">
                         <span class="material-icons">favorite_border</span>
                       </button>
+                      <div class="card__add-to-cart">
+                        <button class="card__add-cart-btn">Add To Cart</button>
+                      </div>
                     </div>
                     <div class="card__info">
                       <div class="card__title">
@@ -259,6 +296,9 @@
                       <button class="card__remove-wishlist">
                         <span class="material-icons">favorite_border</span>
                       </button>
+                      <div class="card__add-to-cart">
+                        <button class="card__add-cart-btn">Add To Cart</button>
+                      </div>
                     </div>
                     <div class="card__info">
                       <div class="card__title">
@@ -278,6 +318,9 @@
                       <button class="card__remove-wishlist">
                         <span class="material-icons">favorite_border</span>
                       </button>
+                      <div class="card__add-to-cart">
+                        <button class="card__add-cart-btn">Add To Cart</button>
+                      </div>
                     </div>
                     <div class="card__info">
                       <div class="card__title">
