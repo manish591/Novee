@@ -7,8 +7,7 @@
   margin-inline: auto;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  grid-row-gap: 1rem;
+  gap: 1rem 1.5rem;
 }
 
 /* Summary section */
@@ -42,14 +41,12 @@
 }
 
 .price-detail {
-  margin-block-start: 0.5rem;
-  margin-block-end: 2rem;
+  margin-block: 0.5rem 2rem;
   border-block-end: 1px solid var(--surface4);
 }
 
 .summary__price-details {
-  padding-block-start: 0.5rem;
-  padding-block-end: 1.5rem;
+  padding-block: 0.5rem 1.5rem;
 }
 
 .cart__place-order {
