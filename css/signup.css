@@ -1,0 +1,108 @@
+.signup {
+    width: 90%;
+    max-width: 350px;
+    background-color: rgba(226, 225, 225, 0.938);
+    margin: 10vh auto;
+    padding: 10vh 0;
+    box-shadow: 3px 5px 8px 1px rgba(192, 192, 192, 0.787);
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.signup__header {
+    text-align: center;
+    margin-bottom: 15vh;
+}
+
+.signup__name, 
+.signup__password,
+.signup__email {
+    padding: 2.2vh 1vh;
+    font-size: .8rem;
+}
+
+
+.signup__title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5vh;
+}
+
+.signup__greeting {
+    font-size: .8rem;
+}
+
+.signup__name,
+.signup__email {
+    margin-bottom: 3vh;
+}
+  
+.signup__name, 
+.signup__password,
+.signup__email {
+    display: block;
+    width: 100%;
+    padding: 2.2vh 1vh;
+    outline: none;
+    background-color: rgba(253, 245, 245, 0.945);
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+    font-size: .8rem;
+}
+  
+label {
+    font-size: .6rem;
+}
+  
+.additional-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+  
+.signup__footer {
+    display: flex;
+}
+  
+.rememberMe-container {
+    display: flex;
+    align-items: center;
+}
+  
+input[type='checkbox'] {
+    margin-right: 5px;
+}
+  
+.signup__forgotPassword, 
+.signup__signup {
+    border: none;
+    background: none;
+    font-size: .6rem;
+    color: #D99789;
+    font-weight: 700;
+}
+  
+.submit-btn {
+    margin-top: 12vh;
+}
+  
+.signup__submit {
+    width: 100%;
+    padding: 2.5vh;
+    font-weight: 700;
+    border: none;
+    background: #D9843B;
+    border-radius: 3px;
+    color: white;
+}
+  
+.signup__footer {
+    margin-top: 3vh;
+}
+
+.signup__footer p {
+    font-size: .6rem;
+    margin-right: 5px;
+}  
