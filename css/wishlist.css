@@ -29,6 +29,11 @@
     font-size: .8rem;
     text-transform: uppercase;
     cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+  }
+
+  .card__moveToBagBtn:hover {
+    background-color: var(--surface3);
   }
   
   .card__info {
