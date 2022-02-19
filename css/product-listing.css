@@ -149,7 +149,7 @@ img {
 .card__discount {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #734124;
+  color: var(--clr-warning);
 }
 
 .card__image-container {
