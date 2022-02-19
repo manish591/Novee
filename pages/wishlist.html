@@ -6,14 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://uinova.netlify.app/css/main.css" />
     <link rel="stylesheet" href="/css/wishlist.css" />
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Wishlist</title>
   </head>
   <body class="surface-two">
-    <div class="wishlist">
+    <aside class="sidebar grid" id="sidenav-open">
+      <section class="sidebar__content">
+        <div class="sidebar__top">
+          <ul class="sidebar__top-list flex">
+            <li class="sidebar__title">
+              <h3>novee</h3>
+            </li>
+            <li class="sidebar__list-item sidebar--clear">
+              <a href="#"
+                ><span class="material-icons clear-icon">clear</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar__bottom">
+          <ul class="sidebar__list flex">
+            <li class="sidebar__list-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="#">Tablets</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="#">Phones</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="#">Laptops</a>
+            </li>
+          </ul>
+          <ul class="sidebar__list flex">
+            <li class="sidebar__list-item">
+              <a href="#">Account</a>
+            </li>
+            <li class="sidebar__list-item">
+              <a href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <a
+        href="#"
+        id="sidenav-close"
+        class="sidebar__close"
+        title="Close Menu"
+      ></a>
+    </aside>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__wrapper flex">
+          <ul class="navbar__list flex">
+            <li class="navbar__items navbar__items--menu">
+              <a href="#sidenav-open" class="navbar__items--icons"
+                ><span class="material-icons">menu</span></a
+              >
+            </li>
+            <li class="navbar__items navbar__items--logo">novee</li>
+          </ul>
+          <ul class="navbar__list flex navbar--hide navbar__list--links">
+            <li class="navbar__items">Home</li>
+            <li class="navbar__items">Laptops</li>
+            <li class="navbar__items">Tablets</li>
+            <li class="navbar__items">Phones</li>
+          </ul>
+          <ul class="navbar__list flex navbar__list--search">
+            <li class="navbar__items navbar--hide navbar__items--search-bar">
+              <div class="search-bar">
+                <span class="material-icons search-icon">search</span>
+                <input
+                  type="text"
+                  class="input-field"
+                  placeholder="search laptops, phones and tablets"
+                />
+              </div>
+            </li>
+            <li
+              class="navbar__items navbar__items--icons navbar__items--search"
+            >
+              <span class="material-icons">search</span>
+            </li>
+          </ul>
+          <ul class="navbar__list flex">
+            <li
+              class="navbar__items navbar--hide navbar__items--icons navbar__items--profile profile"
+            >
+              <span class="material-icons">person</span>
+              <div class="profile__dropdown">
+                <ul class="profile__list grid">
+                  <li class="profile__greeting">
+                    <h3>Hello! Manish</h3>
+                  </li>
+                  <li class="profile__greeting">
+                    <button class="btn btn--contained-primary profile__btn">
+                      Login/Signup
+                    </button>
+                  </li>
+                </ul>
+                <ul class="profile__list grid">
+                  <li class="profile__item">Orders</li>
+                  <li class="profile__item">Wishlist</li>
+                  <li class="profile__item">Gift cards</li>
+                  <li class="profile__item">Contact Us</li>
+                </ul>
+                <ul class="profile__list grid">
+                  <li class="profile__item">Coupons</li>
+                  <li class="profile__item">Saved Cards</li>
+                  <li class="profile__item">Saved Addresses</li>
+                </ul>
+                <ul class="profile__list grid">
+                  <li class="profile__item">Edit Profile</li>
+                  <li class="profile__item">LogOut</li>
+                </ul>
+              </div>
+            </li>
+            <li
+              class="navbar__items navbar--hide navbar__items--icons navbar__items--wishlist"
+            >
+              <span class="material-icons">favorite_border</span>
+            </li>
+            <li class="navbar__items navbar__items--icons">
+              <span class="material-icons">shopping_bag</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="wishlist">
       <div class="wishlist__wrapper">
         <div class="wishlist__info">
           <p>My wishlist 8 items</p>
@@ -205,6 +341,27 @@
           </div>
         </section>
       </div>
-    </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper flow-space-2">
+        <p class="footer__brand">noveee</p>
+        <ul class="footer__list flex">
+          <li class="footer__items">Home</li>
+          <li class="footer__items">Laptops</li>
+          <li class="footer__items">Tablets</li>
+          <li class="footer__items">Phones</li>
+        </ul>
+        <p class="footer__description">
+          Novee provides you with the best electronics material. We'll provide
+          you laptops, tablets, phones of higher quality. Login to get started.
+        </p>
+        <p class="footer__copyright">Copyright 2022. All Rights Reserved</p>
+        <ul class="footer__socials flex">
+          <li class="footer__items">Github</li>
+          <li class="footer__items">Twitter</li>
+          <li class="footer__items">LinkedIn</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

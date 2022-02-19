@@ -1,33 +1,43 @@
 .signup {
     width: 90%;
-    max-width: 350px;
+    max-width: 400px;
     background-color: rgba(226, 225, 225, 0.938);
-    margin: 10vh auto;
-    padding: 10vh 0;
+    margin-block: 7rem;
+    margin-inline: auto;
+    padding-block: 1.5rem;
+    padding-inline: 0;
     box-shadow: 3px 5px 8px 1px rgba(192, 192, 192, 0.787);
 }
 
 .wrapper {
-    width: 80%;
-    margin: 0 auto;
+    inline-size: 80%;
+    margin-block: 0;
+    margin-inline: auto;
 }
 
 .signup__header {
     text-align: center;
-    margin-bottom: 15vh;
+    margin-block-end: 3rem;
 }
 
 .signup__name, 
 .signup__password,
 .signup__email {
-    padding: 2.2vh 1vh;
+    padding-block: 1rem;
+    padding-inline: .7rem;
     font-size: .8rem;
+    display: block;
+    inline-size: 100%;
+    outline: none;
+    background-color: rgba(253, 245, 245, 0.945);
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
 }
 
 
 .signup__title {
     font-size: 1.5rem;
-    margin-bottom: 1.5vh;
+    margin-block-end: .5rem;
 }
 
 .signup__greeting {
@@ -36,20 +46,7 @@
 
 .signup__name,
 .signup__email {
-    margin-bottom: 3vh;
-}
-  
-.signup__name, 
-.signup__password,
-.signup__email {
-    display: block;
-    width: 100%;
-    padding: 2.2vh 1vh;
-    outline: none;
-    background-color: rgba(253, 245, 245, 0.945);
-    border: 1px solid rgba(0, 0, 0, 0.349);
-    border-radius: 5px;
-    font-size: .8rem;
+    margin-block-end: 1rem;
 }
   
 label {
@@ -59,7 +56,7 @@ label {
 .additional-data {
     display: flex;
     justify-content: space-between;
-    margin-top: 2vh;
+    margin-block-start: .7rem;
 }
   
 .signup__footer {
@@ -85,12 +82,12 @@ input[type='checkbox'] {
 }
   
 .submit-btn {
-    margin-top: 12vh;
+    margin-block-start: 4rem;
 }
   
 .signup__submit {
-    width: 100%;
-    padding: 2.5vh;
+    inline-size: 100%;
+    padding-block: 1.2rem;
     font-weight: 700;
     border: none;
     background: #D9843B;
@@ -99,10 +96,25 @@ input[type='checkbox'] {
 }
   
 .signup__footer {
-    margin-top: 3vh;
+    margin-block-start: .7rem;
 }
 
 .signup__footer p {
     font-size: .6rem;
     margin-right: 5px;
-}  
+} 
+
+@media (max-width: 600px) {
+    .signup {
+      margin-block: 6rem;
+  }
+  
+  .signup__header {
+    text-align: center;
+    margin-block-end: 1rem;
+  }
+  
+  .submit-btn {
+    margin-block-start: 1rem;
+  }
+  }

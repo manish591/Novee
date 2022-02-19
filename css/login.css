@@ -1,25 +1,28 @@
 .login {
-    width: 90%;
-    max-width: 350px;
+    inline-size: 90%;
+    max-inline-size: 400px;
     background-color: #F2EDE4;
-    margin: 10vh auto;
-    padding: 10vh 0;
+    margin-block: 7rem;
+    margin-inline: auto;
+    padding-block: 1.5rem;
+    padding-inline: 0;
     box-shadow: 3px 5px 8px 1px rgba(192, 192, 192, 0.787);
 }
 
 .wrapper {
-  width: 80%;
-  margin: 0 auto;
+  inline-size: 80%;
+  margin-block: 0;
+  margin-inline: auto;
 }
 
 .login__header {
   text-align: center;
-  margin-bottom: 15vh;
+  margin-block-end: 3rem;
 }
 
 .login__title {
   font-size: 1.5rem;
-  margin-bottom: 1.5vh;
+  margin-block-end: .5rem;
 }
 
 .login__greeting {
@@ -27,14 +30,15 @@
 }
 
 input[type='text'] {
-  margin-bottom: 3vh;
+  margin-block-end: 1rem;
 }
 
 .login__email,
 .login__password {
   display: block;
-  width: 100%;
-  padding: 2.2vh 1vh;
+  inline-size: 100%;
+  padding-block: 1rem;
+  padding-inline: .7rem;
   outline: none;
   background-color: rgba(253, 245, 245, 0.945);
   border: 1px solid rgba(0, 0, 0, 0.349);
@@ -49,7 +53,7 @@ label {
 .additional-data {
   display: flex;
   justify-content: space-between;
-  margin-top: 2vh;
+  margin-block-start: .7rem;
 }
 
 .login__footer {
@@ -62,7 +66,7 @@ label {
 }
 
 .login__remember-me {
-  margin-right: 5px;
+  margin-inline-end: 5px;
 }
 
 .login__forgotPassword, 
@@ -75,12 +79,12 @@ label {
 }
 
 .submit-btn {
-  margin-top: 12vh;
+  margin-block-start: 4rem;
 }
 
 .login__submit {
-  width: 100%;
-  padding: 2.5vh;
+  inline-size: 100%;
+  padding-block: 1.2rem;
   font-weight: 700;
   border: none;
   background: #D9843B;
@@ -89,10 +93,25 @@ label {
 }
 
 .login__footer {
-  margin-top: 3vh;
+  margin-block-start: .7rem;
 }
 
 .login__footer p {
   font-size: .6rem;
-  margin-right: 5px;
+  margin-inline-end: 5px;
+}
+
+@media (max-width: 600px) {
+  .login {
+    margin-block: 6rem;
+}
+
+.login__header {
+  text-align: center;
+  margin-block-end: 1rem;
+}
+
+.submit-btn {
+  margin-block-start: 1rem;
+}
 }

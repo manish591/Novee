@@ -103,7 +103,7 @@
     padding-inline: 0;
     padding-block: 2rem;
     margin-inline: 0;
-    margin-block: 2rem;
+    margin-block-start: 4rem;
   }
   
   .wishlist__wrapper {
