@@ -191,6 +191,17 @@
                         </optgroup>
                     </select>
                     <fieldset class="listing__filter-item filters">
+                      <legend class="filters__title">Sort</legend>
+                      <div class="filters__group">
+                          <input type="radio" id="sort-one" name="sort" class="filters__checkbox">
+                          <label for="sort-one" class="filters__label">High To Low</label>
+                      </div>
+                      <div class="filters__group">
+                          <input type="radio" name="sort" id="sort-two" class="filters__checkbox">
+                          <label for="sort-two" class="filters__label">Low To High</label>
+                      </div>
+                    </fieldset>
+                    <fieldset class="listing__filter-item filters">
                         <legend class="filters__title">Availability</legend>
                         <div class="filters__group">
                             <input type="checkbox" id="availability-one" name="availability" class="filters__checkbox">
