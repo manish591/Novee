@@ -29,21 +29,17 @@
   font-size: .8rem;
 }
 
-input[type='text'] {
-  margin-block-end: 1rem;
-}
-
 .login__email,
 .login__password {
   display: block;
   inline-size: 100%;
-  padding-block: 1rem;
+  padding-block: .7rem;
   padding-inline: .7rem;
-  outline: none;
   background-color: rgba(253, 245, 245, 0.945);
   border: 1px solid rgba(0, 0, 0, 0.349);
   border-radius: 5px;
   font-size: .8rem;
+  margin-block-end: 1rem;
 }
 
 label {
@@ -84,7 +80,7 @@ label {
 
 .login__submit {
   inline-size: 100%;
-  padding-block: 1.2rem;
+  padding-block: 1rem;
   font-weight: 700;
   border: none;
   background: #D9843B;
