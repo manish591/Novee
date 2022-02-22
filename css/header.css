@@ -212,7 +212,8 @@
 
 .profile__btn {
     block-size: 40px;
-    display: none;
+    margin-block-start: .6rem;
+    /* display: none; */
 }
 
 @media (max-width: 299px) {
