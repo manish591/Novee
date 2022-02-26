@@ -34,7 +34,7 @@ Here is the live link https://novee.netlify.app/
 
 Home page contains all the products listed like mobiles, laptops and tablets. 
 
-Here is the live link https://novee.netlify.app/
+Here is the live link https://novee.netlify.app/pages/product-listing.html
 
 ### Filters
 
